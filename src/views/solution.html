@@ -1,0 +1,66 @@
+<style>
+  table {
+      border-collapse: collapse;
+      font-family: Calibri, sans-serif;
+      margin: auto;
+  }
+  colgroup, tbody {
+      border: solid medium;
+  }
+  td {
+      border: solid thin;
+      height: 2em;
+      width: 2em;
+      text-align: center;
+      padding: 4;
+  }
+
+  textarea {
+      width: 40px;
+      height: 40px;
+      resize: none
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .buttonholder {
+      align-text: center;
+  }
+
+  input {
+      width: 100px;
+      margin: auto;
+  }
+
+</style>
+
+<div class="container">
+  <div>
+  <form action="solve" method="POST">
+    <table>
+      <caption><%=solved%></caption>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
+	<tbody>
+	  <tr> <td><textarea name="1" readonly><%=sol[0]%></textarea> <td>  <textarea name="2"readonly><%=sol[1]%></textarea> <td><textarea name="3"readonly><%=sol[2]%></textarea><td> <textarea name="4"readonly><%=sol[3]%></textarea><td>  <textarea name="5"readonly><%=sol[4]%></textarea><td> <textarea name="6"readonly><%=sol[5]%></textarea><td> <textarea name="7"readonly><%=sol[6]%></textarea><td> <textarea name="8"readonly><%=sol[7]%></textarea> <td><textarea name="9"readonly><%=sol[8]%></textarea>
+  <tr> </textarea><td> <textarea name="10"readonly><%=sol[9]%></textarea> <td> <textarea name="11"readonly><%=sol[10]%></textarea><td> <textarea name="12"readonly><%=sol[11]%></textarea> <td> <textarea name="13"readonly><%=sol[12]%></textarea> <td> <textarea name="14"readonly><%=sol[13]%></textarea><td> <textarea name="15"readonly><%=sol[14]%></textarea> <td> <textarea name="16"readonly><%=sol[15]%></textarea> <td> <textarea name="17"readonly><%=sol[16]%></textarea><td> <textarea name="18"readonly><%=sol[17]%></textarea>
+  <tr> </textarea><td>  <textarea name="19"readonly><%=sol[18]%></textarea> <td>  <textarea name="20"readonly><%=sol[19]%></textarea><td>  <textarea name="21"readonly><%=sol[20]%></textarea><td>  <textarea name="22"readonly><%=sol[21]%></textarea><td>  <textarea name="23"readonly><%=sol[22]%></textarea><td>  <textarea name="24"readonly><%=sol[23]%></textarea><td> <textarea name="25"readonly><%=sol[24]%></textarea> <td>  <textarea name="26"readonly><%=sol[25]%></textarea><td> <textarea name="27"readonly><%=sol[26]%></textarea>
+  <tbody>
+    <tr> <td> <textarea name="28"readonly><%=sol[27]%></textarea> <td>  <textarea name="29"readonly><%=sol[28]%></textarea> <td><textarea name="30"readonly><%=sol[29]%></textarea>  <td>  <textarea name="31"readonly><%=sol[30]%></textarea> <td> <textarea name="32"readonly><%=sol[31]%></textarea> <td> <textarea name="33"readonly><%=sol[32]%></textarea>  <td> <textarea name="34"readonly><%=sol[33]%></textarea> <td> <textarea name="35"readonly><%=sol[34]%></textarea>  <td><textarea name="36"readonly><%=sol[35]%></textarea> 
+	<tr> </textarea> <td> <textarea name="37"readonly><%=sol[36]%></textarea>  <td>  <textarea name="38"readonly><%=sol[37]%></textarea> <td>  <textarea name="39"readonly><%=sol[38]%></textarea> <td>  <textarea name="40"readonly><%=sol[39]%></textarea> <td>  <textarea name="41"readonly><%=sol[40]%></textarea> <td> <textarea name="42"readonly><%=sol[41]%></textarea>  <td> <textarea name="43"readonly><%=sol[0]%></textarea>  <td>  <textarea name="44"readonly><%=sol[44]%></textarea> <td> <textarea name="45"readonly><%=sol[44]%></textarea> 
+  <tr> <td> <textarea name="46"readonly><%=sol[45]%></textarea> <td>  <textarea name="47"readonly><%=sol[46]%></textarea> <td>  <textarea name="48"readonly><%=sol[47]%></textarea> <td> <textarea name="49"readonly><%=sol[48]%></textarea> <td>  <textarea name="50"readonly><%=sol[49]%></textarea> <td> <textarea name="51"readonly><%=sol[50]%></textarea> <td>  <textarea name="52"readonly><%=sol[51]%></textarea> <td> <textarea name="53"readonly><%=sol[52]%></textarea>  <td> <textarea name="54"readonly><%=sol[53]%></textarea> 
+      <tbody>
+	<tr> <td> <textarea name="55"readonly><%=sol[54]%></textarea>  <td> <textarea name="56"readonly><%=sol[55]%></textarea>  <td>  <textarea name="57"readonly><%=sol[56]%></textarea> <td>  <textarea name="58"readonly><%=sol[57]%></textarea> <td> <textarea name="59"readonly><%=sol[58]%></textarea>  <td>  <textarea name="60"readonly><%=sol[59]%></textarea> <td> <textarea name="61"readonly><%=sol[60]%></textarea>  <td>  <textarea name="62"readonly><%=sol[61]%></textarea> <td> <textarea name="63"readonly><%=sol[62]%></textarea> 
+	    <tr> <td>  <textarea name="64"readonly><%=sol[63]%></textarea> <td>  <textarea name="65"readonly><%=sol[64]%></textarea> <td>  <textarea name="66"readonly><%=sol[65]%></textarea> <td>  <textarea name="67"readonly><%=sol[66]%></textarea> <td> <textarea name="68"readonly><%=sol[67]%></textarea>  <td>  <textarea name="69"readonly><%=sol[68]%></textarea> <td>  <textarea name="70"readonly><%=sol[69]%></textarea> <td>  <textarea name="71"readonly><%=sol[70]%></textarea> <td>  <textarea name="72"readonly><%=sol[71]%></textarea> 
+		<tr> <td> <textarea name="73"readonly><%=sol[72]%></textarea> <td>  <textarea name="74"readonly><%=sol[73]%></textarea> <td> <textarea name="75"readonly><%=sol[74]%></textarea>  <td> <textarea name="76"readonly><%=sol[75]%></textarea>  <td>  <textarea name="77"readonly><%=sol[76]%></textarea> <td> <textarea name="78"readonly><%=sol[77]%></textarea>  <td>  <textarea name="79"readonly><%=sol[78]%></textarea> <td> <textarea name="80"readonly><%=sol[79]%></textarea>  <td> <textarea name="81"readonly><%=sol[80]%></textarea>
+</table>
+</div>
+  <input type="button" onclick="window.location.href='/';" value="New Sudoku">
+  </div>
+</form>
+</div>

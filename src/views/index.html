@@ -1,0 +1,67 @@
+<style>
+  table {
+      border-collapse: collapse;
+      font-family: Calibri, sans-serif;
+      margin: auto;
+  }
+  colgroup, tbody {
+      border: solid medium;
+  }
+  td {
+      border: solid thin;
+      height: 2em;
+      width: 2em;
+      text-align: center;
+      padding: 4;
+  }
+
+  textarea {
+      width: 40px;
+      height: 40px;
+      resize: none;
+      maxlength: 1;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .buttonholder {
+      align-text: center;
+  }
+
+  input {
+      width: 100px;
+      margin: auto;
+  }
+
+</style>
+
+<div class="container">
+  <div>
+  <form action="solve" method="POST">
+    <table>
+      <caption>Sudoku Solver</caption>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
+	<tbody>
+	  <tr> </textarea> <td><textarea name="1"maxlength="1">0</textarea> <td>  <textarea name="2"maxlength="1">4</textarea> <td><textarea name="3"maxlength="1">0</textarea><td> <textarea name="4"maxlength="1">0</textarea><td>  <textarea name="5"maxlength="1">0</textarea><td> <textarea name="6"maxlength="1">0</textarea><td> <textarea name="7"maxlength="1">1</textarea><td> <textarea name="8"maxlength="1">7</textarea> <td><textarea name="9"maxlength="1">9</textarea>
+  <tr> </textarea><td> <textarea name="10"maxlength="1">0</textarea> <td> <textarea name="11"maxlength="1">0</textarea><td> <textarea name="12"maxlength="1">2</textarea> <td> <textarea name="13"maxlength="1">0</textarea> <td> <textarea name="14"maxlength="1">0</textarea><td> <textarea name="15"maxlength="1">8</textarea> <td> <textarea name="16"maxlength="1">0</textarea> <td> <textarea name="17"maxlength="1">5</textarea><td> <textarea name="18"maxlength="1">4</textarea>
+  <tr> </textarea><td>  <textarea name="19"maxlength="1">0</textarea> <td>  <textarea name="20"maxlength="1">0</textarea><td>  <textarea name="21"maxlength="1">6</textarea><td>  <textarea name="22"maxlength="1">0</textarea><td>  <textarea name="23"maxlength="1">0</textarea><td>  <textarea name="24"maxlength="1">5</textarea><td> <textarea name="25"maxlength="1">0</textarea> <td>  <textarea name="26"maxlength="1">0</textarea><td> <textarea name="27"maxlength="1">8</textarea>
+  <tbody>
+    <tr> <td> <textarea name="28"maxlength="1">0</textarea> <td>  <textarea name="29"maxlength="1">8</textarea> <td><textarea name="30"maxlength="1">0</textarea>  <td>  <textarea name="31"maxlength="1">0</textarea> <td> <textarea name="32"maxlength="1">7</textarea> <td> <textarea name="33"maxlength="1">0</textarea>  <td> <textarea name="34"maxlength="1">9</textarea> <td> <textarea name="35"maxlength="1">1</textarea>  <td><textarea name="36"maxlength="1">0</textarea> 
+	<tr> </textarea> <td> <textarea name="37"maxlength="1">0</textarea>  <td>  <textarea name="38"maxlength="1">5</textarea> <td>  <textarea name="39"maxlength="1">0</textarea> <td>  <textarea name="40"maxlength="1">0</textarea> <td>  <textarea name="41"maxlength="1">9</textarea> <td> <textarea name="42"maxlength="1">0</textarea>  <td> <textarea name="43"maxlength="1">0</textarea>  <td>  <textarea name="44"maxlength="1">3</textarea> <td> <textarea name="45"maxlength="1">0</textarea> 
+  <tr> <td> <textarea name="46"maxlength="1">0</textarea> <td>  <textarea name="47"maxlength="1">1</textarea> <td>  <textarea name="48"maxlength="1">9</textarea> <td> <textarea name="49"maxlength="1">0</textarea> <td>  <textarea name="50"maxlength="1">6</textarea> <td> <textarea name="51"maxlength="1">0</textarea> <td>  <textarea name="52"maxlength="1">0</textarea> <td> <textarea name="53"maxlength="1">4</textarea>  <td> <textarea name="54"maxlength="1">0</textarea> 
+      <tbody>
+	<tr> <td> <textarea name="55"maxlength="1">3</textarea>  <td> <textarea name="56"maxlength="1">0</textarea>  <td>  <textarea name="57"maxlength="1">0</textarea> <td>  <textarea name="58"maxlength="1">4</textarea> <td> <textarea name="59"maxlength="1">0</textarea>  <td>  <textarea name="60"maxlength="1">0</textarea> <td> <textarea name="61"maxlength="1">7</textarea>  <td>  <textarea name="62"maxlength="1">0</textarea> <td> <textarea name="63"maxlength="1">0</textarea> 
+	    <tr> <td>  <textarea name="64"maxlength="1">5</textarea> <td>  <textarea name="65"maxlength="1">7</textarea> <td>  <textarea name="66"maxlength="1">0</textarea> <td>  <textarea name="67"maxlength="1">1</textarea> <td> <textarea name="68"maxlength="1">0</textarea>  <td>  <textarea name="69"maxlength="1">0</textarea> <td>  <textarea name="70"maxlength="1">2</textarea> <td>  <textarea name="71"maxlength="1">0</textarea> <td>  <textarea name="72"maxlength="1">0</textarea> 
+		<tr> <td> <textarea name="73"maxlength="1">9</textarea> <td>  <textarea name="74"maxlength="1">2</textarea> <td> <textarea name="75"maxlength="1">8</textarea>  <td> <textarea name="76"maxlength="1">0</textarea>  <td>  <textarea name="77"maxlength="1">0</textarea> <td> <textarea name="78"maxlength="1">0</textarea>  <td>  <textarea name="79"maxlength="1">0</textarea> <td> <textarea name="80"maxlength="1">6</textarea>  <td> <textarea name="81"maxlength="1">0</textarea>
+</table>
+</div>
+  <input type="submit" value="solve">
+  </div>
+</form>
+</div>
