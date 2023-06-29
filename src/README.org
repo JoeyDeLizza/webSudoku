@@ -1,0 +1,5 @@
+* Sudoku Solver
+A Node.js webserver for solving sudokus.  Try it out [[sudoku.delizza.dev][here!]]
+
+** Usage
+Enter numbers into the text boxes and hit the solve button.  The server will return the solution if there is one.  If there is no solution to the sudoku, the server will return no solution and fill the text boxes with all zeros.  If there is more than one possible solution to the given input, the server will send one possible solution back to the user. 
