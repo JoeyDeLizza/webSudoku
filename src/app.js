@@ -19,7 +19,7 @@ app.post("/solve", async (req, res) => {
     console.log(gameData);
     // call python sudoku solver
     const spawn = require("child_process").spawn;
-    const pythonProcess = spawn('python',["./SudukoSolver.py", gameData]);
+    const pythonProcess = spawn('python',["./SudokuSolver.py", gameData]);
     
     pythonProcess.stdout.on('data', async (data) => {
 	console.log(data.toString());
